@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests">
+<listeners>
+<listener class-name = "Academy.E2EFrameworkProject.TestListners"/>
+</listeners>
+	<test thread-count="5" name="Validating user authentication">
+	<classes>
+		<class name="Academy.E2EFrameworkProject.HomePage" />
+	</classes>
+	</test>
+	<test thread-count="5" name="Validating tests" >
+	<classes>
+		<class name="Academy.E2EFrameworkProject.TextValidation" />
+	</classes>
+	</test>
+	<test thread-count="5" name="Validating links" >
+	<classes>
+		<class name="Academy.E2EFrameworkProject.LinksValidation" />
+	</classes>
+	</test>
+</suite> 
